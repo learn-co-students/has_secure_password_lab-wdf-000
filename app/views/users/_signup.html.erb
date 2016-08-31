@@ -1,0 +1,6 @@
+<%= form_tag controller: 'users',action: 'create',method: 'post' do %>
+  <%= text_field_tag 'user[name]' %><br>
+  <%= password_field_tag 'user[password]' %><br>
+  <%= password_field_tag 'user[password_confirmation]' %><br>
+  <%= submit_tag "signup" %>
+<% end %>
