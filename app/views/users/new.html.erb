@@ -1,9 +1,10 @@
-<h1>Sign Up! I know you want to! :)</h1>
+<h1>Sign Up! You know you want to! :)</h1>
 <p>
-  <%= form_for @user do |f| %>
-    Username: <%= f.text_field :name %> <br>
-    Password: <%= f.password_field :password %> <br>
+  <%= form_for :user, url: '/signup' do |f| %>
+  <p>  Username: <%= f.text_field :name %> <br><br>
+    Password: <%= f.password_field :password %> <br><br>
     Password Confirmation: <%= f.password_field :password_confirmation %> <br>
-    <%= f.submit %>
+  </p>
+    <%= f.submit "Signup!" %>
     <% end %>
 </p>
