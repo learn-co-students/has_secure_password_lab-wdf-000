@@ -1,0 +1,11 @@
+<h1>Login with your name and super-secret password</h1>
+<p>
+  <%= form_for :user, url: '/login' do |f| %>
+  <p>  Username: <%= f.text_field :name %> <br><br>
+    Password: <%= f.password_field :password %> <br><br>
+  </p>
+    <%= f.submit "Open Sesame!" %>
+    <% end %>
+</p>
+
+<a href="/signup">If you haven't signed up yet, start here.</a>
