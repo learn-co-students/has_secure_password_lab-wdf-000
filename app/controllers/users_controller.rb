@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   # skip_before_action :authentication_required, only: [:new]
 
   def new
-    render :'public/new'
   end
 
   def create

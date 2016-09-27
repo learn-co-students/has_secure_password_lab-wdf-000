@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-  def login
-    render :'public/login'
+  def new
   end
 
   def create
@@ -11,13 +10,13 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to user_index_path
     else
-      render :'public/login', status: 403
+      render :'sessions/new', status: 403
     end
   end
 
   def destroy
     session.delete :user_id
-    redirect_to login_path
+    redirect_to root_path
   end
 
   private
