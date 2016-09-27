@@ -1,9 +1,8 @@
 <div style="width: 80%; margin: 0 auto;">
-  <h1>Create Account:</h1>
-  <%= form_for :user, url: '/create' do |f| %>
+  <h1>Login</h1>
+  <%= form_for :user, url: '/login' do |f| %>
     Username: <%= f.text_field :name %>
     Password: <%= f.password_field :password %>
-    Password Confirmation: <%= f.password_field :password_confirmation %>
     <%= f.submit "Submit" %>
   <% end %>
 </div>
