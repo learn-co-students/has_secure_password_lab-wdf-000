@@ -1,0 +1,10 @@
+<h2>Login page</h2>
+<%= form_for :user, url: '/login' do |f| %>
+  <%= f.label :name %>
+  <%=f.text_field :name %><br><br>
+  <%=f.label :password %>
+  <%=f.password_field :password %><br><br>
+  <%=f.submit "Login"%>
+<% end %>
+<p>Don't have a account yet! <%= link_to "Signup", '/signup' %></p>
+
