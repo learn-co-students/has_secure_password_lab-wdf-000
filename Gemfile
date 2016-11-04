@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'bcrypt'
 gem 'pry'
 gem 'pry-nav'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -45,4 +45,3 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
 end
-
